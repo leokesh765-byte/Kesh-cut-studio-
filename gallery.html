@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Kesh Cut Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #111;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #f9b208;
+    }
+
+    .hero {
+      width: 100%;
+      height: 45vh;
+      background: url('kesh.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #fff;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 2.2rem;
+      color: #f9b208;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    }
+
+    .gallery-section {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: #fafafa;
+    }
+
+    .gallery-section h2 {
+      color: #f9b208;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .gallery-section p {
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-size: 1rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Kesh Cut Studio 💈</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Creative Gallery</h1>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Showcasing Our Best Work</h2>
+    <p>
+      Every project tells a story — from graphic designs to video edits, and from sound production to photography.  
+      Explore some of the moments and masterpieces we’ve proudly created at <strong>Kesh Cut Studio</strong>.
+    </p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?graphic-design,art" alt="Graphic Design Work">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?video-editing,studio" alt="Video Editing Work">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?sound,studio" alt="Sound Production">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?photography,portrait" alt="Photography Work">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?web,code" alt="Web Development Project">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?creative,team" alt="Creative Teamwork">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?editing,computer" alt="Editing Setup">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?digital-art,design" alt="Digital Art Design">
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/800x600/?camera,photography" alt="Studio Camera">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kesh Cut Studio | Designed by Leo Kesh</p>
+    <p>📞 0507145558 | 🌐 @KeshCutStudio</p>
+  </footer>
+</body>
+</html>

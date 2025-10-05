@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Kesh Cut Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #111;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #f9b208;
+    }
+
+    .hero {
+      width: 100%;
+      height: 45vh;
+      background: url('kesh.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 2.2rem;
+      color: #f9b208;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    }
+
+    .services-section {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: #fafafa;
+    }
+
+    .services-section h2 {
+      color: #f9b208;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .services-section p.intro {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .service-box {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .service-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .service-box .content {
+      padding: 1.5rem;
+      text-align: left;
+    }
+
+    .service-box h3 {
+      color: #f9b208;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-box p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Kesh Cut Studio 💈</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Creative Services</h1>
+  </section>
+
+  <section class="services-section">
+    <h2>What We Do Best</h2>
+    <p class="intro">
+      At <strong>Kesh Cut Studio</strong>, we merge innovation, art, and technology to bring your creative ideas to life.
+      From designs that speak, to videos that inspire, to sounds that move you — we make it all possible.
+    </p>
+
+    <div class="services-container">
+      <div class="service-box">
+        <img src="https://source.unsplash.com/800x600/?graphic-design,computer" alt="Graphic Design">
+        <div class="content">
+          <h3>🎨 Graphic Design</h3>
+          <p>
+            Bold, creative, and professional — we design logos, posters, flyers, banners, and social media content that represent your brand’s energy and uniqueness.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <img src="https://source.unsplash.com/800x600/?video-editing,studio" alt="Video Editing">
+        <div class="content">
+          <h3>🎥 Video Editing</h3>
+          <p>
+            We turn your footage into captivating stories with smooth transitions, cinematic color grading, and perfect pacing that keeps viewers hooked.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <img src="https://source.unsplash.com/800x600/?music,sound-studio" alt="Sound Production">
+        <div class="content">
+          <h3>🔊 Sound Production</h3>
+          <p>
+            Whether it’s voiceovers, sound effects, or full music production, we create crisp, balanced, and professional soundscapes for your projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <img src="https://source.unsplash.com/800x600/?web-development,code" alt="Web Development">
+        <div class="content">
+          <h3>💻 Web Development</h3>
+          <p>
+            We build sleek, responsive websites that perform flawlessly on any device — ensuring your digital presence leaves a lasting impression.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <img src="https://source.unsplash.com/800x600/?photography,portrait" alt="Photography">
+        <div class="content">
+          <h3>📸 Photography & Branding</h3>
+          <p>
+            A picture is worth a thousand words. We capture high-quality images that define your identity and strengthen your brand visually.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <img src="https://source.unsplash.com/800x600/?creative,teamwork" alt="Creative Consultation">
+        <div class="content">
+          <h3>🧠 Creative Consultation</h3>
+          <p>
+            We guide brands and individuals through the creative process — helping refine their visual strategy, storytelling, and content execution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kesh Cut Studio | Designed by Leo Kesh</p>
+    <p>📞 0507145558 | 🌐 @KeshCutStudio</p>
+  </footer>
+</body>
+</html>

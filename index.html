@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kesh Cut Studio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #111;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #f9b208;
+    }
+
+    .hero {
+      height: 90vh;
+      background: url('kesh.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      max-width: 750px;
+      padding: 0 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.7rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero span {
+      color: #f9b208;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f9b208;
+      color: #111;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #fff;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #f9b208;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    section p {
+      max-width: 850px;
+      margin: 0.5rem auto;
+      font-size: 1rem;
+    }
+
+    .about {
+      background: #fafafa;
+    }
+
+    .services {
+      background: #fff;
+    }
+
+    .why {
+      background: #111;
+      color: #fff;
+    }
+
+    .why h2 {
+      color: #f9b208;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Kesh Cut Studio 🎨</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to <span>Kesh Cut Studio</span></h1>
+      <p>
+        We’re a digital creative powerhouse — blending graphic design, video editing, and sound engineering
+        into one studio that brings your ideas to life. Creativity lives here, and every project tells a story.
+      </p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Kesh Cut Studio</h2>
+    <p>
+      <strong>Kesh Cut Studio</strong> is a creative design and production space built for visionaries. 
+      We specialize in crafting visual and audio experiences that leave lasting impressions. 
+      From sleek branding and motion graphics to cinematic video editing and sound mixing, 
+      our team handles every project with skill, imagination, and passion.
+    </p>
+    <p>
+      Founded by <strong>Leo Kesh</strong>, the studio started as a small dream and evolved into 
+      a full-service creative hub serving individuals, influencers, and businesses worldwide. 
+      What drives us isn’t just the art — it’s the impact. Every design, every beat, every edit 
+      is made to connect emotionally and visually.
+    </p>
+    <p>
+      Our mission is to turn creative concepts into stunning visuals and sounds that speak louder than words.
+      Whether you’re a brand trying to make an impact or a creator looking for a professional touch,
+      Kesh Cut Studio is your go-to destination for quality and creativity.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <p>
+      🎨 <strong>Graphic Design:</strong> Eye-catching posters, flyers, social media ads, and logos designed to stand out.  
+    </p>
+    <p>
+      🎬 <strong>Video Editing:</strong> Smooth transitions, cinematic effects, and storytelling visuals for your projects.  
+    </p>
+    <p>
+      🎧 <strong>Sound & Audio Mixing:</strong> Crystal-clear audio for songs, podcasts, intros, and video backgrounds.  
+    </p>
+    <p>
+      💻 <strong>Digital Branding:</strong> Helping businesses and creators build strong online identities that get noticed.
+    </p>
+  </section>
+
+  <section class="why">
+    <h2>Why Choose Us</h2>
+    <p>✅ We combine creativity, innovation, and precision for world-class results.</p>
+    <p>✅ Every project is unique — designed to reflect your personality or brand.</p>
+    <p>✅ Fast delivery, professional quality, and 100% satisfaction guaranteed.</p>
+    <p>✅ We don’t follow trends — we create them. Be bold, be different, be Kesh Cut.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Kesh Cut Studio | Designed by Leo Kesh</p>
+    <p>📞 0507145558 | 📧leokesh765@gmail.com</p>
+  </footer>
+</body>
+</html>
